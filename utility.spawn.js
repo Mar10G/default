@@ -26,7 +26,7 @@ var utilitySpawn =
         creepBuilders = [];
         
         /////Charge Extensions
-        creepBuilders.push(new this.creepBuilder('E', 'X', 'Z', 2, 1));
+        creepBuilders.push(new this.creepBuilder('E', 'X', 'Z', 0, 1));
         
         /////Defense
         creepBuilders.push(new this.creepBuilder('A', 'X', 'X', 0, 2));
@@ -397,7 +397,7 @@ var utilitySpawn =
         if(firstLetter == 'S') { cParts = 0; mParts = 2; wParts = 0; }
         if(firstLetter == 'T') { cParts = 1; mParts = 10; wParts = 25; }
         
-        if(firstLetter == 'U') { cParts = 4 ; mParts = 4; wParts = 4; }
+    //    if(firstLetter == 'U') { cParts = 4 ; mParts = 4; wParts = 4; }
         if(firstLetter == 'R') { cParts = 4 ; mParts = 4; wParts = 4; }
         
          

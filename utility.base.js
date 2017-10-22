@@ -544,6 +544,10 @@ var utilityBase = {
             
                 else
                 {
+                    
+                    this.chargeFromClosestContainerOrSpawn();
+                    
+                    
                   //  console.log('got her 9');
                     var closest =  utility.getClosestNotEmptyContainer([Memory.myMap['K']]);
                     if(this.withdraw(closest, RESOURCE_ENERGY) == ERR_NOT_IN_RANGE) 
