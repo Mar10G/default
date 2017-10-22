@@ -20,7 +20,7 @@ var roleClaimy  =    require('role.claimy');
  
 var droneLogic = require('logic.drone');
 var repairLogic = require('logic.repair');
-var spawnMain = require('spawn.main');
+//var spawnMain = require('spawn.main');
 
 var utility = require('utility');
 var utilitySpawn = require('utility.spawn');
@@ -44,7 +44,9 @@ module.exports.loop = function () {
     {
         utility.defendRoom(name);
         
-        if(utility.getOwner(Game.rooms[name]) == 'Mar10G')
+        console.log(utility.getOwner(Game.rooms[name]));
+        
+        if(utility.getOwner(Game.rooms[name]) == 'Mar')
         {
             utility.startPrint('ROOM ' + Memory.myMap[name] + ' - '  + utility.getRoomEnergyStatus(name) );
         

@@ -42,7 +42,7 @@ var droneLogic =
     
     main: function() 
     {
-        console.log('# Jobs = ' + Memory.jobs.length);
+         console.log('# Jobs = ' + Memory.jobs.length);
         
         
         if(this.isOnInterval(1)){ this.cleanJobs(); }
@@ -537,7 +537,7 @@ var droneLogic =
     cleanJobs: function()
     {
         
-      //  Memory.jobs = [];
+       // Memory.jobs = [];
         
        // console.log('cleaning jobs');
         this.cleanOldJobs();
